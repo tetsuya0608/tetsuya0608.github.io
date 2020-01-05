@@ -1,0 +1,293 @@
+@media(max-width:1000px) {
+  .hum {
+    display:flex;
+    position:absolute;
+    left:92%;
+    top:2%;
+  }
+
+  .img-wrapper {
+
+  }
+
+  .about-wrapper {
+    text-align: center;
+    width:100%;
+  }
+
+  .about-img img {
+    width: 250px;
+    height:250px;
+  }
+
+  .about-main {
+    display:block;
+    width:70%;
+    margin:0 auto;
+  }
+
+  .about-right {
+    padding-top:20px;
+    width:70%;
+    margin:0 auto;
+  }
+
+  .skills-wrapper {
+    width: 100%;
+    text-align: center;
+  }
+
+  .skills-contents {
+    width:70%;
+    margin:0 auto;
+    flex-wrap: wrap;
+  }
+
+  .strong-main h3 {
+    font-size:20px;
+  }
+
+  .strong-main p {
+    font-size:16px;
+  }
+
+ header {
+   display:block;
+  }
+
+  .navbar-nav li {
+    display: block;
+    margin-bottom:10px;
+  }
+
+  .navbar-nav {
+    display:none;
+    margin-top:10px;
+  }
+
+  .contact-main p {
+    font-size:18px;
+  }
+
+  .contact_form  {
+    text-align:center;
+    width:400px;
+    border-radius:10px;
+    padding:30px 0;
+    background-color: #F2F2F2;
+    position:absolute;
+    top: 20%;
+    left: 28%;
+  }
+
+  .fa-times {
+    margin-left:300px;
+    display:inline-block;
+  }
+
+  .form_controll {
+    width:200px;
+    height:40px;
+    font-size:18px;
+    padding-left:10px;
+    border-radius:5px;
+    margin-bottom:20px;
+  }
+
+  textarea {
+    width:200px;
+    height:100px;
+    padding:10px 0 0 10px;
+    font-size:16px;
+    border-radius:5px;
+    box-shadow: 2px 2px 4px inset;
+    border-color:#6E6E6E;
+  }
+
+  .form_submit {
+    width:200px;
+    font-size:20px;
+    display: inline-block;
+    margin-top:20px;
+    padding:10px 0;
+    background-color:#013ADF;
+    color:#F2F2F2;
+    border-radius:10px;
+    outline:none;
+  }
+
+
+
+
+}
+
+@media(max-width:670px) {
+
+  .header-title p {
+    font-size:18px;
+  }
+
+  .navbar-nav li {
+    font-size:12px;
+  }
+
+  .hum {
+    display:flex;
+    position:absolute;
+    left:85%;
+    top:2%;
+  }
+
+  .about-img img {
+    width: 150px;
+    height:150px;
+    }
+
+    .about-main {
+      width:80%;
+    }
+
+    .about-main h3 {
+      font-size:25px;
+    }
+
+    .about-right p {
+      font-size:10px;
+    }
+
+    .skills-contents {
+      display:block;
+    }
+
+    .content-box i {
+      font-size:50px;
+    }
+
+    .content-box p {
+      font-size:16px;
+    }
+
+    .skills-bottom p {
+      margin-top:10px;
+      font-size:14px;
+    }
+
+    .contact-main p {
+      text-align: center;
+      width:80%;
+      margin:0 auto;
+      font-size:12px;
+    }
+
+    .strong-main h3 {
+      font-size:18px;
+    }
+
+    .strong-main p {
+      font-size:12px;
+    }
+
+    .heading p {
+      font-size:28px;
+    }
+
+    .contact_button {
+      display:inline-block;
+      font-size: 12px;
+      background-color: #013ADF;
+      color:#F2F2F2;
+      text-align: center;
+      padding:20px;
+      border-radius:15px;
+      margin:30px 0;
+      border-bottom: solid 4px #627295;
+    }
+
+    .contact_form p {
+      font-size:16px;
+    }
+
+    .contact_form  {
+      text-align:center;
+      width:300px;
+      border-radius:10px;
+      padding:30px 0;
+      background-color: #F2F2F2;
+      position:absolute;
+      top: 10%;
+      left: 16%;
+    }
+
+    .fa-times {
+      margin-left:200px;
+      display:inline-block;
+    }
+
+    .form_controll {
+      width:200px;
+      height:40px;
+      font-size:14px;
+      padding-left:10px;
+      border-radius:5px;
+      margin-bottom:20px;
+    }
+
+    textarea {
+      width:200px;
+      height:90px;
+      padding:10px 0 0 10px;
+      font-size:16px;
+      border-radius:5px;
+      box-shadow: 2px 2px 4px inset;
+      border-color:#6E6E6E;
+    }
+}
+
+@media(max-width:350px) {
+  .contact_form  {
+    text-align:center;
+    width:300px;
+    border-radius:10px;
+    padding:30px 0;
+    background-color: #F2F2F2;
+    position:absolute;
+    top: 10%;
+    left: 5%;
+  }
+
+  .fa-times {
+    margin-left:200px;
+    display:inline-block;
+  }
+
+  .form_controll {
+    width:200px;
+    height:40px;
+    font-size:18px;
+    padding-left:10px;
+    border-radius:5px;
+    margin-bottom:20px;
+  }
+
+  textarea {
+    width:200px;
+    height:100px;
+    padding:10px 0 0 10px;
+    font-size:16px;
+    border-radius:5px;
+    box-shadow: 2px 2px 4px inset;
+    border-color:#6E6E6E;
+  }
+
+  .form_submit {
+    width:200px;
+    font-size:20px;
+    display: inline-block;
+    margin-top:20px;
+    padding:10px 0;
+    background-color:#013ADF;
+    color:#F2F2F2;
+    border-radius:10px;
+    outline:none;
+  }
+}

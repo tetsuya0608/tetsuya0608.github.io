@@ -1,0 +1,347 @@
+body {
+    animation: fadeIn 2s ease 0s 1 normal;
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+* {
+  padding:0;
+  margin:0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing:border-box;
+}
+
+header {
+  display:flex;
+  justify-content: space-between;
+  padding:20px;
+  z-index:10;
+}
+
+.header-title p {
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Girassol', cursive;
+  font-size:24px;
+}
+
+
+
+.hum {
+  position:relative;
+  width:40px;
+  height: 40px;
+  display:none;
+}
+
+.hum_line {
+  position: absolute;
+  left: 10px;
+  width: 20px;
+  height: 2px;
+  background-color: #1C1C1C;
+}
+
+.hum_line1 {
+  top:10px;
+}
+
+.hum_line2 {
+  top:18px;
+}
+
+.hum_line3 {
+  top:26px;
+}
+
+.img-wrapper {
+  background-image: url("../img/white.city3.jpg");
+  background-repeat: no-repeat;
+
+  height: 0;
+  /* 表示画像の高さ ÷ 表示画像の幅 × 100 */
+  padding-top: 60%;
+  0 0 no-repeat;
+  background-size: contain;
+}
+.img-middle {
+  padding:20px 0 0 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Girassol', cursive;
+  font-family: 'Berkshire Swash', cursive;
+  color:#1C1C1C;
+
+}
+.navbar-nav {
+  margin-right:20px;
+}
+
+.navbar-nav li {
+  display:inline-block;
+  margin-left:10px;
+  font-weight:bold;
+}
+
+.navbar-nav a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+.navbar-nav a::after {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #333;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+.navbar-nav a:hover::after {
+  bottom: -4px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav1 {
+  color:#151515;
+}
+
+.nav2 {
+  color:#1C1C1C;
+}
+
+.nav3 {
+  color:#2E2E2E;
+}
+
+.nav4 {
+  color:#424242;
+}
+
+.heading {
+  text-align:center;
+  padding:30px 0;
+}
+
+.heading p {
+  font-size:40px;
+  border-bottom:2px solid #FFFF00;
+  display:inline-block;
+  letter-spacing:2px;
+  font-family: 'Ma Shan Zheng', cursive;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Lobster', cursive;
+}
+
+.about-wrapper {
+  margin-top:30px;
+}
+
+.about-main {
+  display:flex;
+  padding-top:50px;
+  width:900px;
+  margin:0 auto;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.about-img img {
+  border-radius:25%;
+}
+
+.about-right {
+  font-family: 'Ma Shan Zheng', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Sawarabi Mincho', sans-serif;
+  width:400px;
+  margin-left:200px;
+}
+
+.profile {
+  font-size:30px;
+  margin-bottom:10px;
+}
+
+.about-right p {
+  margin-bottom:20px;
+  color:#2E2E2E;
+}
+
+.skills-wrapper {
+  text-align:center;
+  padding:30px 0;
+
+}
+.skills-contents {
+  width:550px;
+  margin:0 auto;
+  margin-top:50px;
+  margin-bottom:20px;
+  display:flex;
+}
+
+.content-box {
+ padding:0 20px;
+
+}
+
+.skills-contents i{
+  font-size:70px;
+}
+
+.skills-bottom {
+  color:#585858;
+}
+
+.strong-wrapper {
+  text-align:center;
+  width:80%;
+  margin:0 auto;
+}
+.strong-main {
+  font-family: 'Ma Shan Zheng', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Sawarabi Mincho', sans-serif;
+text-align:center;
+margin-bottom:50px;
+}
+
+.strong-main h3 {
+  font-size:24px;
+}
+
+.spacing {
+  margin-top:20px;
+}
+
+.contact-wrapper {
+  text-align: center;
+}
+
+.contact_button {
+  display:inline-block;
+  font-size: 20px;
+  background-color: #013ADF;
+  color:#F2F2F2;
+  text-align: center;
+  padding:20px;
+  border-radius:15px;
+  margin:30px 0;
+  border-bottom: solid 4px #627295;
+
+}
+
+.contact-main p {
+  font-size:24px;
+}
+.contact_button:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+  border-bottom: none;
+}
+
+.form-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}
+
+.contact_form  {
+  text-align:center;
+  width:500px;
+  border-radius:10px;
+  padding:30px 0;
+  background-color: #F2F2F2;
+  position:absolute;
+  top: 20%;
+  left: 34%;
+}
+
+.fa-times {
+  margin-left:400px;
+  display:inline-block;
+}
+
+
+.contact_form p {
+  font-size:24px;
+  font-weight:bold;
+  margin-bottom:20px;
+  color:#2E2E2E;
+}
+
+.form_controll {
+  width:250px;
+  height:50px;
+  font-size:18px;
+  padding-left:10px;
+  border-radius:5px;
+  margin-bottom:20px;
+}
+
+textarea {
+  width:250px;
+  height:150px;
+  padding:10px 0 0 10px;
+  font-size:16px;
+  border-radius:5px;
+  box-shadow: 2px 2px 4px inset;
+  border-color:#6E6E6E;
+}
+
+.form_submit {
+  width:250px;
+  font-size:20px;
+  display: inline-block;
+  margin-top:20px;
+  padding:10px 0;
+  background-color:#013ADF;
+  color:#F2F2F2;
+  border-radius:10px;
+  outline:none;
+}
+
+#scroll {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #696969;
+  background-color: #d3d3d3;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 24px;
+  }
+
+footer {
+  text-align: center;
+  padding:30px 0;
+  background-color:#1C1C1C;
+  color:#E6E6E6;
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Girassol', cursive;
+}
