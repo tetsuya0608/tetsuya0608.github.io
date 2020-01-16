@@ -1,0 +1,219 @@
+* {
+  box-sizing:border-box;
+}
+
+li {
+  list-style:none;
+}
+
+.navbar-brand {
+  font-family: 'Ma Shan Zheng', cursive;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Lobster', cursive;
+  color:#BDBDBD;
+}
+.navbar {
+  position:fixed;
+  z-index:10;
+  width:100%;
+}
+/* アイコンフェードインcss */
+.navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes fadein {
+from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+/* ここまで */
+.navbar-nav a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+.navbar-nav a::after {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #333;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+.navbar-nav a:hover::after {
+  bottom: -4px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.img-wrapper {
+  background-image:url("../img/white.cty.jpg");
+  /* height:600px; */
+  background-size:cover;
+  background-repeat: no-repeat;
+ background-attachment: fixed;
+ /* width:100%; */
+ padding-top: 56.17%
+}
+
+.about-wrapper {
+  width:80%;
+  margin:0 auto;
+  padding:50px 0;
+}
+
+.heading {
+  text-align:center;
+}
+
+.heading p {
+  font-size:40px;
+  border-bottom:2px solid #FFFF00;
+  display:inline-block;
+  letter-spacing:2px;
+  font-family: 'Ma Shan Zheng', cursive;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Lobster', cursive;
+}
+
+.about-main {
+  display:flex;
+  margin-top:50px;
+}
+
+.about-img img {
+  border-radius:25%;
+}
+
+.about-right {
+  font-family: 'Ma Shan Zheng', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Sawarabi Mincho', sans-serif;
+  width:90%;
+  margin-left:200px;
+}
+
+.about-right p {
+  margin-bottom:20px;
+  color:#2E2E2E;
+}
+
+.skills-wrapper {
+  text-align:center;
+  padding:50px 0;
+
+}
+.skills-contents {
+  text-align:center;
+   justify-content: center;
+   align-items: center;
+   display:flex;
+   padding:30px 0;
+}
+
+
+.content-box {
+ padding:0 30px;
+
+}
+
+.skills-contents i{
+  font-size:5em;
+}
+
+.slider {
+  text-align:center;
+  margin-top:30px;
+}
+
+.slider p {
+  margin:10px 0px 30px 0px;
+  color:#333333;
+}
+
+.slider img {
+  box-shadow: 4px 4px #DDDDDD;
+
+}
+
+.strong-wrapper {
+  text-align:center;
+  margin:0 auto;
+}
+.strong-main {
+  font-family: 'Ma Shan Zheng', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Sawarabi Mincho', sans-serif;
+text-align:center;
+margin-bottom:50px;
+padding:0 150px;
+}
+
+.contact-wrapper {
+  width:800px;
+  margin:0 auto;
+  color:#424242;
+  margin-bottom:50px;
+}
+
+.form_controll {
+ width:50%;
+ border-radius:5px;
+}
+
+.form_submit {
+  margin-top:20px;
+  border-radius:5px;
+  background-color: #74DF00;
+  color:#fff;
+  padding:10px 20px;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  outline:none;
+}
+.form_submit:active {
+  /*ボタンを押したとき*/
+ -webkit-transform: translateY(4px);
+ transform: translateY(4px);/*下に動く*/
+ box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+ border-bottom: none;
+}
+
+#scroll {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #696969;
+  background-color: #d3d3d3;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 24px;
+      }
+
+footer {
+  padding:20px 0;
+  text-align:center;
+  background-color:#424242;
+  color:#E6E6E6;
+}
